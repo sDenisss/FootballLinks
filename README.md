@@ -1,8 +1,8 @@
 # ⚽ Football Matches Links
 
-![GitHub last commit](https://img.shields.io/github/last-commit/sDenisss/REPO?color=66fcf1&label=Last%20Update)
-![GitHub repo size](https://img.shields.io/github/repo-size/sDenisss/REPO?color=ff6f61&label=Repo%20Size)
-![GitHub stars](https://img.shields.io/github/stars/sDenisss/REPO?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/sDenisss/FootballLinks?color=66fcf1&label=Last%20Update)
+![GitHub repo size](https://img.shields.io/github/repo-size/sDenisss/FootballLinks?color=ff6f61&label=Repo%20Size)
+![GitHub stars](https://img.shields.io/github/stars/sDenisss/FootballLinks?style=social)
 
 ---
 
@@ -35,11 +35,5 @@ Manually updated — just add new match cards to the HTML file.
     git push origin main
     ```
 5. Wait a few minutes for GitHub Pages to update.
-
-### 🎨 Features
-- 🖤 **Dark theme** with accent color.
-- 📱 **Responsive design** — works on mobile, tablet, and desktop.
-- 🖥 **webOS support** — can be viewed on a TV.
-- 🔗 Easy to add new matches.
 
 ---
