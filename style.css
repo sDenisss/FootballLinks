@@ -25,16 +25,21 @@ header {
     padding: 1rem;
     text-align: center;
     cursor: pointer;
+    display: block; /* ключевой момент */
 }
+.match-card a {
+    pointer-events: none; /* чтобы клик проходил сквозь текст к div */
+}
+
 .match-card:hover {
     background: #2a3545;
 }
-.match-card a {
+/* .match-card a {
     text-decoration: none;
     color: #66fcf1;
     font-size: 1.2rem;
     font-weight: bold;
-}
+} */
 .match-date {
     margin-top: 0.5rem;
     font-size: 0.9rem;

@@ -1,3 +1,13 @@
+document.querySelectorAll(".match-card, .match-card a").forEach(card => {
+    card.addEventListener("click", () => {
+        const parentCard = card.closest(".match-card");
+        const videoURL = parentCard.getAttribute("data-video");
+        videoFrame.src = videoURL;
+        modal.style.display = "block";
+    });
+});
+
+
 const modal = document.getElementById("videoModal");
 const videoFrame = document.getElementById("videoFrame");
 const closeModal = document.getElementById("closeModal");
