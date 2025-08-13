@@ -1,95 +1,44 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #0b0c10;
-    color: #fff;
-}
-header {
-    background: #1f2833;
-    padding: 1rem;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #66fcf1;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
-.All_matches {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-    padding: 1rem;
-}
-.match-card {
-    background: #1f2833;
-    border-radius: 10px;
-    padding: 1rem;
-    text-align: center;
-    cursor: pointer;
-    display: block; /* ключевой момент */
-}
-.match-card a {
-    pointer-events: none; /* чтобы клик проходил сквозь текст к div */
-}
-
-.match-card:hover {
-    background: #2a3545;
-}
-/* .match-card a {
-    text-decoration: none;
-    color: #66fcf1;
-    font-size: 1.2rem;
-    font-weight: bold;
-} */
-.match-date {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    color: #c5c6c7;
-}
-
-/* Модальное окно */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    left: 0; top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.8);
-}
-.modal-content {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-.video-area {
-    flex: 6;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.video-area iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-.side-panel {
-    flex: 1;
-    background: #1f2833;
-    padding: 1rem;
-    overflow-y: auto;
-}
-.side-panel a {
-    display: block;
-    color: #66fcf1;
-    margin-bottom: 1rem;
-    text-decoration: none;
-}
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-}
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #0b0c10;
+            color: #fff;
+        }
+        header {
+            background: #1f2833;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #66fcf1;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        .matches {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .match-card {
+            background: #1f2833;
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.2s ease;
+            display: block;
+        }
+        .match-card:hover {
+            background: #2a3545;
+        }
+        .match-title {
+            color: #66fcf1;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .match-date {
+            font-size: 0.9rem;
+            color: #c5c6c7;
+        }

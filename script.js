@@ -1,20 +1,12 @@
-document.querySelectorAll(".match-card, .match-card a").forEach(card => {
-    card.addEventListener("click", () => {
-        const parentCard = card.closest(".match-card");
-        const videoURL = parentCard.getAttribute("data-video");
-        videoFrame.src = videoURL;
-        modal.style.display = "block";
-    });
-});
-
-
 const modal = document.getElementById("videoModal");
 const videoFrame = document.getElementById("videoFrame");
 const closeModal = document.getElementById("closeModal");
 
-document.querySelectorAll(".match-card").forEach(card => {
-    card.addEventListener("click", () => {
-        const videoURL = card.getAttribute("data-video");
+document.querySelectorAll(".match-card a").forEach(link => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault(); // запрещаем переход по href
+        const parentCard = link.closest(".match-card");
+        const videoURL = parentCard.getAttribute("data-video");
         videoFrame.src = videoURL;
         modal.style.display = "block";
     });
@@ -22,7 +14,7 @@ document.querySelectorAll(".match-card").forEach(card => {
 
 closeModal.addEventListener("click", () => {
     modal.style.display = "none";
-    videoFrame.src = ""; // Очищаем, чтобы видео остановилось
+    videoFrame.src = ""; // очищаем
 });
 
 window.addEventListener("click", (e) => {
