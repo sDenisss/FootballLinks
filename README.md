@@ -17,21 +17,21 @@ Manually updated — just add new match cards to the HTML file.
 1. Open the `index.html` file in your editor.
 2. Find the block:
     ```html
-    <div class="All_matches">
+    <div class="matches">
         ...
     </div>
     ```
 3. Add a match card:
     ```html
-    <div class="match-card">
-        <a href="MATCH_LINK" target="_blank">TEAM 1 vs TEAM 2</a>
-        <div class="match-date">YYYY-MM-DD, HH:MM</div>
-    </div>
+    <a class="match-card" href="#" target="_blank">
+            <div class="match-title">Team1 - Team2</div>
+            <div class="match-date">YYYY-MM-DD, HH:MM</div>
+    </a>
     ```
 4. Save and commit changes:
     ```bash
     git add .
-    git commit -m "Added match: Team 1 vs Team 2"
+    git commit -m "Added match: Team 1 - Team 2"
     git push origin main
     ```
 5. Wait a few minutes for GitHub Pages to update.

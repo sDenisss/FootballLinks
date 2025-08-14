@@ -1,44 +1,44 @@
 body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #0b0c10;
-            color: #fff;
-        }
-        header {
-            background: #1f2833;
-            padding: 1rem;
-            text-align: center;
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #66fcf1;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-        }
-        .matches {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1rem;
-            padding: 1rem;
-        }
-        .match-card {
-            background: #1f2833;
-            border-radius: 10px;
-            padding: 1rem;
-            text-align: center;
-            text-decoration: none;
-            color: inherit;
-            transition: background 0.2s ease;
-            display: block;
-        }
-        .match-card:hover {
-            background: #2a3545;
-        }
-        .match-title {
-            color: #66fcf1;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-        .match-date {
-            font-size: 0.9rem;
-            color: #c5c6c7;
-        }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #0b0c10;
+    color: #fff;
+}
+header {
+    background: #1f2833;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #66fcf1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+.matches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+.match-card {
+    background: #1f2833;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.2s ease;
+    display: block;
+}
+.match-card:hover {
+    background: #2a3545;
+}
+.match-title {
+    color: #66fcf1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.match-date {
+    font-size: 0.9rem;
+    color: #c5c6c7;
+}
