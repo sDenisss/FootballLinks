@@ -24,8 +24,14 @@ Manually updated — just add new match cards to the HTML file.
 3. Add a match card:
     ```html
     <a class="match-card" href="#" target="_blank">
-            <div class="match-title">Team1 - Team2</div>
-            <div class="match-date">YYYY-MM-DD, HH:MM</div>
+        <div class="match-content">
+            <img class="team-logo" src="Icons/...">
+            <div class="match-info">
+                <div class="match-title">Team1 - Team2</div>
+                <div class="match-date">YYYY-MM-DD, HH:MM</div>
+            </div>
+            <img class="team-logo" src="Icons/...">
+        </div>
     </a>
     ```
 4. Save and commit changes:
