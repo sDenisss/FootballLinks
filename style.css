@@ -18,10 +18,10 @@ header {
 .leagues {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 8rem;
     background: #0b0c10;
     border-bottom: 1px solid #45a29e;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
 }
 .leagues a {
     color: #c5c6c7;
