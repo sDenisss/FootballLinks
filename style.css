@@ -18,21 +18,33 @@ header {
 .leagues {
     display: flex;
     justify-content: center;
-    gap: 8rem;
+    gap: 2rem;
     background: #0b0c10;
     border-bottom: 1px solid #45a29e;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
+
+.leagues div {
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    transition: background 0.2s ease;
+}
+
+.leagues div:hover {
+    background: #1f2833;
+}
+
 .leagues a {
     color: #c5c6c7;
-    text-decoration: none;
+    text-decoration: none; /* убираем синие подчёркивания */
     font-weight: bold;
-    transition: color 0.2s;
+    font-size: 1rem;
+    display: block;
 }
+
 .leagues a:hover {
     color: #66fcf1;
 }
-
 .matches {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
